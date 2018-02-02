@@ -1,0 +1,18 @@
+<template>
+    <div class="hello">
+        <img src="\{{img}}" />
+        <h2>Hello san !</h2>
+    </div>
+</template>
+
+<script>
+    import sp from '@/assets/image/sp_black.png'
+
+    export default {
+        initData() {
+            return {
+                img: sp
+            };
+        }
+    }
+</script>

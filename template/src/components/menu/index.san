@@ -1,0 +1,44 @@
+<template>
+    <div style="\{{style}}">
+        <ul>
+            <li s-for="m in list">
+                <a href="#\{{m.url}}">
+                    \{{m.text}}
+                </a>
+            </li>
+        </ul>
+    </div>
+</template>
+
+<script>
+    export default {
+        initData() {
+            return {
+                style: {
+                    height: window.innerHeight - 48 + "px"
+                },
+                list: [{
+                        id: 1,
+                        url: '/',
+                        text: 'hello'
+                    },
+                    {
+                        id: 2,
+                        url: '/demo1',
+                        text: 'demo1'
+                    },
+                    {
+                        id: 3,
+                        url: '/demo2',
+                        text: 'demo2'
+                    },
+                    {
+                        id: 4,
+                        url: '/asfasdgfasg',
+                        text: 'error'
+                    }
+                ]
+            };
+        }
+    }
+</script>

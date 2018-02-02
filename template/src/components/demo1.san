@@ -1,0 +1,47 @@
+<template>
+    <div>
+        <p>官方示例</p> 
+        <br/><br/>
+        <san-button on-click="openDialog" variants="raised primary">打开一个对话框</san-button>
+        <san-dialog open="{= open =}" on-clickMask="handleClickMask">
+            <div class="demo-dialog-title" slot="title">
+                <san-icon>warning</san-icon>
+                确认要删除吗？
+            </div>
+            <div>这里是弹框的内容呀</div>
+            <div slot="actions">
+                <san-button on-click="closeDialog" variants="info">cancel</san-button>
+                <san-button on-click="closeDialog" variants="danger">delete</san-button>
+            </div>
+        </san-dialog>
+    </div>
+</template>
+<script>
+    import {
+        Button,
+        Dialog,
+        Icon
+    } from 'san-mui';
+
+    export default {
+        components: {
+            'san-dialog': Dialog,
+            'san-button': Button,
+            'san-icon': Icon
+        },
+        initData() {
+            return {
+                open: false
+            };
+        },
+        openDialog() {
+            this.data.set('open', true);
+        },
+        closeDialog() {
+            this.data.set('open', false);
+        },
+        handleClickMask() {
+            console.log('You clicked the mask and closed the dialog!');
+        }
+    }
+</script>
