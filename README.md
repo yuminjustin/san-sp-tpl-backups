@@ -1,2 +1,25 @@
-# spotlight-templates-san
-spotlight-templates-san
+## spotlight-templates-san
+spotlight scaffold template for san<br>
+
+## Use：
+
+     spotlight init san my-project
+
+     cd my-project
+
+     npm install
+
+     npm run dev
+
+     npm run build
+
+此模板是san<br>
+This template is base on webpack, support for <a href="https://ecomfe.github.io/san/" title="San">San</a> <br>
+
+1.配置在build/config.js 当中；<br>
+  Configures in build/config.js <br><br>
+
+2.此模板运行会报错，原因是san-mui有缺陷，<a href="https://github.com/ecomfe/san-mui/issues/69" title="San">查看异常</a>，修改之后就正常，san-mui有其他异常请给他们提issue; <br>
+  This template will be error when you run it，because san-mui has some bugs, <a href="https://github.com/ecomfe/san-mui/issues/69" title="San">look bugs</a>, fix it by yourself. If you found another bug in san-mui make issue to them<br><br>
+
+enjoy!
