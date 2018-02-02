@@ -22,4 +22,7 @@ This template is base on webpack, support for <a href="https://ecomfe.github.io/
 2.此模板运行会报错，原因是san-mui有缺陷，<a href="https://github.com/ecomfe/san-mui/issues/69" title="San">查看异常</a>，修改之后就正常，san-mui有其他异常请给他们提issue; <br>
   This template will be error when you run it，because san-mui has some bugs, <a href="https://github.com/ecomfe/san-mui/issues/69" title="San">look bugs</a>, fix it by yourself. If you found another bug in san-mui make issue to them<br><br>
 
+3.执行build命令，涉及到san-mui的将直接报错，所以想用使用san还是自己写组件吧; <br>
+   When build you project，you will be find a log error by san-mui, so make components by youself;
+
 enjoy!
